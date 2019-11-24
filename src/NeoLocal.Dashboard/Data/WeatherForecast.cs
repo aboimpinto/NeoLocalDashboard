@@ -1,6 +1,6 @@
 using System;
 
-namespace NeoLocalDashboard.Data
+namespace NeoLocal.Dashboard.Data
 {
     public class WeatherForecast
     {

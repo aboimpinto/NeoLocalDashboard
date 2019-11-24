@@ -1,13 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using ElectronNET.API;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using NeoLocalDashboard.Data;
+using NeoLocal.Dashboard.Data;
 
-namespace NeoLocalDashboard
+namespace NeoLocal.Dashboard
 {
     public class Startup
     {
@@ -51,8 +55,6 @@ namespace NeoLocalDashboard
                 endpoints.MapBlazorHub();
                 endpoints.MapFallbackToPage("/_Host");
             });
-
-            Task.Run(async () => await Electron.WindowManager.CreateWindowAsync());
         }
     }
 }

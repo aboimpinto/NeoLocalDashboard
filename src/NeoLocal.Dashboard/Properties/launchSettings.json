@@ -3,18 +3,11 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:26003",
-      "sslPort": 44342
+      "applicationUrl": "http://localhost:39995",
+      "sslPort": 44332
     }
   },
   "profiles": {
-    "Electron.NET App": {
-      "commandName": "Executable",
-      "executablePath": "electronize",
-      "commandLineArgs": "start",
-      "workingDirectory": "."
-    },
-
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
@@ -22,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "NeoLocalDashboard": {
+    "NeoLocal.Dashboard": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:5001;http://localhost:5000",

@@ -2,7 +2,7 @@ using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace NeoLocalDashboard.Data
+namespace NeoLocal.Dashboard.Data
 {
     public class WeatherForecastService
     {
