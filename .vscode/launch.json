@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/src/NeoLocalDashboard/bin/Debug/netcoreapp3.0/NeoLocalDashboard.dll",
+            "program": "${workspaceFolder}/NeoLocal.Dashboard/bin/Debug/netcoreapp3.0/NeoLocal.Dashboard.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/src/NeoLocalDashboard",
+            "cwd": "${workspaceFolder}/NeoLocal.Dashboard",
             "stopAtEntry": false,
             // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
