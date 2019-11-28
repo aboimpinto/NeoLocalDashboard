@@ -1,8 +1,31 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="sidebar">
-    <NavMenu />
-</div>
+<Sidebar @ref="sidebar">
+    <SidebarContent>
+        <SidebarBrand>
+            <a href="">NEO LOCAL</a>
+        </SidebarBrand>
+        <SidebarNavigation>
+            <SidebarItem>
+                <SidebarLink To="" Title="Show NEO LOCAL dashboard">
+                    <Icon Name="IconName.Dashboard" Margin="Margin.Is3.FromRight" />Dashboard
+                </SidebarLink>
+            </SidebarItem>
+
+            <SidebarItem>
+                <SidebarLink To="" Title="Docker connection">
+                    <Icon Name="IconName.Lock" Margin="Margin.Is3.FromRight" />Docker
+                </SidebarLink>
+            </SidebarItem>
+
+            <SidebarItem>
+                <SidebarLink To="" Title="Containers features">
+                    <Icon  Name="IconName.Lock" Margin="Margin.Is3.FromRight" />Containers
+                </SidebarLink>
+            </SidebarItem>
+        </SidebarNavigation>
+    </SidebarContent>
+</Sidebar>
 
 <div class="main">
     <div class="top-row px-4">
@@ -13,3 +36,7 @@
         @Body
     </div>
 </div>
+
+@code{
+    Sidebar sidebar;
+}

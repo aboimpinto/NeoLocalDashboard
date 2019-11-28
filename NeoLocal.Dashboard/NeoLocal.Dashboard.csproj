@@ -4,4 +4,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Blazorise.Bootstrap" Version="0.8.6.4" />
+    <PackageReference Include="Blazorise.Icons.FontAwesome" Version="0.8.6.4" />
+    <PackageReference Include="Blazorise.Sidebar" Version="0.8.6.4" />
+  </ItemGroup>
+
 </Project>
