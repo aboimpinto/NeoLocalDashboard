@@ -1,0 +1,25 @@
+<span class="@map[Style] fa-@IconName"></span>
+@if (!string.IsNullOrEmpty(this.Label))
+{
+    <span>@Label</span>
+}
+
+@code {
+    [Parameter]
+    public FontawesomeIconStyle Style { get; set; }
+
+    [Parameter]
+    public string IconName { get; set; }
+
+    [Parameter]
+    public string Label { get; set; }
+
+    private IDictionary<FontawesomeIconStyle, string> map = new Dictionary<FontawesomeIconStyle, string>
+        {
+            { FontawesomeIconStyle.Solid, "fas" },
+            { FontawesomeIconStyle.Regular, "far" },
+            { FontawesomeIconStyle.Light, "fal" },
+            { FontawesomeIconStyle.Duotone, "fad" },
+            { FontawesomeIconStyle.Brands, "fab" }
+        };
+}

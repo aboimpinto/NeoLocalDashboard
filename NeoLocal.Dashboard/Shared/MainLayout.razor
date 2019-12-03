@@ -1,6 +1,6 @@
 ﻿@inherits LayoutComponentBase
 
-<Sidebar @ref="sidebar">
+<Sidebar>
     <SidebarContent>
         <SidebarBrand>
             <a href="">NEO LOCAL</a>
@@ -8,19 +8,19 @@
         <SidebarNavigation>
             <SidebarItem>
                 <SidebarLink To="" Title="Show NEO LOCAL dashboard">
-                    <Icon Name="IconName.Dashboard" Margin="Margin.Is3.FromRight" />Dashboard
+                    <FontawesomeIcon Style="@FontawesomeIconStyle.Solid" IconName="columns" Label="Dashboard" />
                 </SidebarLink>
             </SidebarItem>
 
             <SidebarItem>
-                <SidebarLink To="" Title="Docker connection">
-                    <Icon Name="@("fab fa-docker")" Margin="Margin.Is3.FromRight" />Docker
+                <SidebarLink To="Counter" Title="Docker connection">
+                    <FontawesomeIcon Style="@FontawesomeIconStyle.Brands" IconName="docker" Label="Docker" />
                 </SidebarLink>
             </SidebarItem>
 
             <SidebarItem>
                 <SidebarLink To="" Title="Containers features">
-                    <Icon  Name="IconName.Lock" Margin="Margin.Is3.FromRight" />Containers
+                    <FontawesomeIcon Style="@FontawesomeIconStyle.Solid" IconName="list" Label="Containers" />
                 </SidebarLink>
             </SidebarItem>
         </SidebarNavigation>
@@ -28,15 +28,19 @@
 </Sidebar>
 
 <div class="main">
-    <div class="top-row px-4">
-        <a href="https://docs.microsoft.com/en-us/aspnet/" target="_blank">About</a>
-    </div>
-
-    <div class="content px-4">
+    <Bar Class="app-bar" Background="Background.Primary" ThemeContrast="ThemeContrast.Light">
+        <BarBrand>
+            <BarItem>
+                <BarLink To="">
+                    <Icon Name="IconName.Dashboard" /> Blazorise Demo
+                </BarLink>
+            </BarItem>
+        </BarBrand>
+    </Bar>
+    <div class="app-content">
         @Body
     </div>
 </div>
 
 @code{
-    Sidebar sidebar;
 }
